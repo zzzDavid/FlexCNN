@@ -1,5 +1,6 @@
 filename = 'network_out.model'
 
+
 with open(filename, 'r') as f:
     lines = f.readlines()
     for line in lines[1:]:
@@ -18,7 +19,6 @@ with open(filename, 'r') as f:
             print("\t output_channel = " + output_channel)
             for i, il in enumerate(input_layers):
                 print(f"\t input_layer {i} = " + il)
- 
 
         else:
             tensors = (content[0].strip('][')).split(', ')
@@ -45,7 +45,7 @@ with open(filename, 'r') as f:
             print("\t layer_type = " + layer_type)
             print("\t in_channel = " + in_channel)
             print("\t out_channel = " + out_channel)
-            print("\t expansion_factor = " + expansion_factor)
+            print("\t expansion_factor = " + expansion_factor) # ?
             print("\t filter = " + filter_)
             print("\t stride = " + stride)
             print("\t relu = " + relu)
@@ -53,7 +53,7 @@ with open(filename, 'r') as f:
             print("\t batchnorm = " + batchnorm)
             print("\t biasAdd = " + biasAdd)
             print("\t Add = " + Add)
-            print("\t InNumTile = " + InNumTile)
-            print("\t OutNumTile = " + OutNumTile)
-            print("\t HeightTile = " + HeightTile)
-            print("\t WidthTile = " + WidthTile)
+            print("\t InNumTile = " + InNumTile) # ?
+            print("\t OutNumTile = " + OutNumTile) # ?
+            print("\t HeightTile = " + HeightTile) # ?
+            print("\t WidthTile = " + WidthTile) # ?
